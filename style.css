@@ -1,0 +1,258 @@
+*
+{
+	padding: 0px;
+	margin: 0px;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(0deg, #e789b5 0%, #1f4878 35%,#122b44 50%, #040b13 100%);
+    padding: 0%;
+    overflow: hidden;
+  }
+  h2 {
+    color: rgb(112, 187, 42);
+    text-shadow: 1px 0 black, 0 2px black, 3px 0 black, 0 3px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+}
+a{
+  color: rgb(216, 196, 21);
+  font-family: Arial, Helvetica, sans-serif;
+}
+  #header{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+    height: 50vh;  
+    }
+  
+  .cloud {
+    width: 900px;
+    height: 100px;
+    border-radius: 30%;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+  }
+  
+  #cloud-base {
+    top: 90px;
+    height: 100px;
+    filter: url(#filter-base);
+    box-shadow: 200px 170px 19px 40px rgba(230, 213, 213, 0.9);
+  }
+  #cloud-back {
+    top: 90px;
+    height: 30px;
+    width: 500px;
+    filter: url(#filter-back);
+    box-shadow: 200px 200px 10px 40px rgba(215, 215, 215, 0.3);
+  }
+  
+  #cloud-mid {
+    top: 80px;
+    width: 580px;
+    height: 35px;
+    filter: url(#filter-mid);
+    box-shadow: 210px 250px 28px 30px rgba(66, 111, 160, 0.2);
+  }
+  
+  #cloud-front {
+    top: 70px;
+    width: 450px;
+    height: 40px;
+    left: -20px;
+    filter: url(#filter-front);
+    box-shadow: 210px 272px 30px 0px rgba(121, 63, 124, 0.4);
+  }
+
+  /*ligthing effects for cloud */
+
+  #lightings
+{
+	bottom: -60px;
+	position: absolute;
+	width: 100%;
+}
+
+#wrap
+{
+	/*border-radius*/
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	height: 20px;
+	width: 100vw;
+	/* position: absolute; */
+	margin: 0px auto;
+  padding: 0;
+} 
+
+/* was 1 */
+#cloud-base
+{
+	/*animation*/
+	-webkit-animation: cloud-base 5s ease-in-out infinite alternate;
+	-moz-animation: cloud-base 5s ease-in-out infinite alternate;
+	-ms-animation: cloud-base 5s ease-in-out infinite alternate;
+	-o-animation: cloud-base 5s ease-in-out infinite alternate;
+	animation: cloud-base 5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes 
+cloud-base { from {
+-webkit-box-shadow: 0 0 250px 20px #473C78;
+}
+
+to { -webkit-box-shadow: 0 0 100px 15px #F72A3B; }
+}
+@-moz-keyframes 
+cloud-base { from {
+-moz-box-shadow: 0 0 250px 20px #473C78;
+}
+
+to { -moz-box-shadow: 0 0 100px 15px #F72A3B; }
+}
+@-o-keyframes 
+cloud-base { from {
+-o-box-shadow: 0 0 250px 20px #473C78;
+}
+
+to { -o-box-shadow: 0 0 100px 15px #F72A3B; }
+}
+
+@keyframes 
+cloud-base { from {
+box-shadow: 0 0 250px 20px #473C78;
+}
+
+to {box-shadow: 0 0 100px 15px #F72A3B; }
+}
+
+
+/* was 2 */
+#cloud-back
+{
+	width: 90%;
+	/*animation*/
+	-webkit-animation: cloud-back 4s ease-in-out infinite alternate;
+	-moz-animation: cloud-back 4s ease-in-out infinite alternate;
+	-ms-animation: cloud-back 4s ease-in-out infinite alternate;
+	-o-animation: cloud-back 4s ease-in-out infinite alternate;
+	animation: cloud-back 4s ease-in-out infinite alternate;
+}
+@-webkit-keyframes 
+cloud-back { from {
+-webkit-box-shadow: 0 0 250px 20px #18C499;
+}
+
+to { -webkit-box-shadow: 0 0 100px 15px #D8F05E; }
+}
+@-moz-keyframes 
+cloud-back { from {
+-moz-box-shadow: 0 0 250px 20px #18C499;
+}
+
+to { -moz-box-shadow: 0 0 100px 15px #D8F05E; }
+}
+@-o-keyframes 
+cloud-back { from {
+-o-box-shadow: 0 0 250px 20px #18C499;
+}
+
+to { -o-box-shadow: 0 0 100px 15px #D8F05E; }
+}
+
+@keyframes 
+cloud-back { from {
+box-shadow: 0 0 250px 20px #18C499;
+}
+
+to { box-shadow: 0 0 100px 15px #D8F05E; }
+}
+
+/* was 3 */
+#cloud-mid
+{
+	width: 80%;
+	/*animation*/
+	-webkit-animation: three 3s ease-in-out infinite alternate;
+	-moz-animation: three 3s ease-in-out infinite alternate;
+	-ms-animation: three 3s ease-in-out infinite alternate;
+	-o-animation: three 3s ease-in-out infinite alternate;
+	animation: three 3s ease-in-out infinite alternate;
+}
+@-webkit-keyframes 
+cloud-mid { from {
+-webkit-box-shadow: 0 0 250px 20px #FFDD00;
+}
+
+to { -webkit-box-shadow: 0 0 100px 15px #3E33FF; }
+}
+@-moz-keyframes 
+cloud-mid { from {
+-moz-box-shadow: 0 0 250px 20px #FFDD00;
+}
+
+to { -moz-box-shadow: 0 0 100px 15px #3E33FF }
+}
+@-o-keyframes 
+cloud-mid { from {
+-o-box-shadow: 0 0 250px 20px #FFDD00;
+}
+
+to { -o-box-shadow: 0 0 100px 15px #3E33FF }
+}
+
+@keyframes 
+cloud-mid { from {
+box-shadow: 0 0 250px 20px #FFDD00;
+}
+
+to { box-shadow: 0 0 100px 15px #3E33FF }
+}
+
+/*was 4 */
+#cloud-front
+{
+	width: 70%;
+	/*animation*/
+	-webkit-animation: cloud-front 2s ease-in-out infinite alternate;
+	-moz-animation: cloud-front 2s ease-in-out infinite alternate;
+	-ms-animation: cloud-front 2s ease-in-out infinite alternate;
+	-o-animation: cloud-front 2s ease-in-out infinite alternate;
+	animation: cloud-front 2s ease-in-out infinite alternate;
+}
+@-webkit-keyframes 
+cloud-front { from {
+-webkit-box-shadow: 0 0 250px 20px #781848;
+}
+
+to { -webkit-box-shadow: 0 0 100px 15px #F2BBE9; }
+}
+@-moz-keyframes 
+cloud-front { from {
+-moz-box-shadow: 0 0 250px 20px #781848;
+}
+
+to { -moz-box-shadow: 0 0 100px 15px #F2BBE9; }
+}
+@-o-keyframes 
+cloud-front { from {
+-o-box-shadow: 0 0 250px 20px #781848;
+}
+
+to { -o-box-shadow: 0 0 100px 15px #F2BBE9; }
+}
+
+@keyframes 
+cloud-front { from {
+shadow: 0 0 250px 20px #781848;
+}
+
+to { shadow: 0 0 100px 15px #F2BBE9; }
+}
